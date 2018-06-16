@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero-panel',
-  templateUrl: './hero-panel.component.html',
-  styleUrls: ['./hero-panel.component.scss']
+  templateUrl: './brew-ticker.component.html',
+  styleUrls: ['./brew-ticker.component.scss']
 })
-export class HeroPanelComponent implements OnInit {
+export class BrewTickerComponent implements OnInit {
 
   constructor() { }
 
-  backgroundImageUrl = 'assets/images/kevin-364843-unsplash.jpg';
+  // backgroundImageUrl = 'assets/images/kevin-364843-unsplash.jpg';
 
   panelTitleRightList = [
     'Software',
@@ -21,19 +21,19 @@ export class HeroPanelComponent implements OnInit {
   panelTitleRight = this.panelTitleRightList[0];
 
   setPanelTitle(index: number) {
-    let me = this;
+    const me = this;
 
-    let newString = this.panelTitleRightList[index];
-    let oldString = this.panelTitleRight;
+    const newString = this.panelTitleRightList[index];
+    const oldString = this.panelTitleRight;
 
-    let oldStringLength = oldString.length;
-    let newStringLength = newString.length;
+    const oldStringLength = oldString.length;
+    const newStringLength = newString.length;
 
     let i = 0;
     let j = newStringLength;
 
     return new Promise(resolve => {
-        let timer = window.setInterval(() => {
+        const timer = window.setInterval(() => {
           if (i < oldStringLength) {
             me.panelTitleRight = oldString.substring(0, oldStringLength - i);
             i++;
@@ -50,18 +50,18 @@ export class HeroPanelComponent implements OnInit {
 
   async panelTitleTimer() {
     let index = 1;
-    var me = this;
+    const me = this;
 
     setInterval(() => {
       if (index === me.panelTitleRightList.length) {
         index = 0;
-      };
+      }
 
       me.setPanelTitle(index).then(function() {
         index += 1;
       });
 
-    }, 5000)
+    }, 5000);
   }
 
   ngOnInit() {
