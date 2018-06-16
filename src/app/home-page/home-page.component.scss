@@ -1,0 +1,50 @@
+$faded-background : linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+
+$theme-orange : #f7622c;
+
+.jumbotron {
+    border-radius: 0;
+    background: $faded-background;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.accent-color {
+    color: $theme-orange;
+}
+
+::ng-deep .skill-card {
+    text-align: center;
+    background: $faded-background;
+    padding: 2em;
+
+    .skill-card__icon {
+        .material-icons { 
+            font-size: 5em;
+            color: $theme-orange;
+        }
+
+        .mat-icon {
+            height: 1em;
+            width: 2em;
+        }
+    }
+
+    .skill-card__content {
+        .skill-card__content-title {
+            font-size: 2em;
+            color: $theme-orange;
+            font-weight: 600;
+        }
+    }
+}
+
+.language-tile {
+    padding: 1em;
+    background: $faded-background;
+    margin: 1em;
+}

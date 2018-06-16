@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hero-panel',
+  selector: 'app-brew-ticker',
   templateUrl: './brew-ticker.component.html',
   styleUrls: ['./brew-ticker.component.scss']
 })
@@ -12,10 +12,10 @@ export class BrewTickerComponent implements OnInit {
   // backgroundImageUrl = 'assets/images/kevin-364843-unsplash.jpg';
 
   panelTitleRightList = [
-    'Software',
-    'Ideas',
-    'Solutions',
-    'Innovations',
+    'Software.',
+    'Ideas.',
+    'Solutions.',
+    'Innovations.',
   ];
 
   panelTitleRight = this.panelTitleRightList[0];

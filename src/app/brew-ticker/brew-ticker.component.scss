@@ -2,18 +2,22 @@
   color: #f7622c;
 }
 
-.panel--header {
-  // margin-top: 30%;
-  padding: 10em 1em;
+// .panel--header {
+//   margin-top: 30%;
+//   padding: 10em 1em;
+// }
+
+.panel--header__left {
+  margin-right: 10px;
 }
 
 .panel--header__flasher {
-  margin-left: -12px;
+  margin-left: -4px;
 }
 
-.hero-panel {
-  min-height: 30em;
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255, 0.6)), url(assets/images/kevin-364843-unsplash.jpg) top no-repeat;
-  background-size: cover;
-  background-position-y: 30%;
-}
+// .hero-panel {
+//   min-height: 30em;
+//   // background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255,255,255, 0.6)), url(assets/images/kevin-364843-unsplash.jpg) top no-repeat;
+//   background-size: cover;
+//   background-position-y: 30%;
+// }
