@@ -13,11 +13,6 @@ export class AppComponent {
 
   resizeEvent = new Subject<Window>();
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
-    this.resizeEvent.next(event.target as Window);
-  }
-
   OnInit() {
     this.resizeEvent.next(window);
   }

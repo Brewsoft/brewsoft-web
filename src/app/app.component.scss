@@ -3,3 +3,14 @@
 .responsive-image {
   max-width: 100%;
 }
+
+.navbar-footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

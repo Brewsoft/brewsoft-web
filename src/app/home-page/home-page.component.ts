@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { Subject } from 'rxjs';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -8,8 +9,6 @@ import { Subject } from 'rxjs';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  @Input() resizeEvent: Subject<Window>;
-
   windowHeight: number;
   windowWidth: number;
 
@@ -47,9 +46,17 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.resizeEvent.subscribe(event => {
-      this.windowHeight = event.innerHeight;
-      this.windowWidth = event.innerWidth;
-    });
+    // this.resizeEvent.subscribe(event => {
+    //   this.windowHeight = event.innerHeight;
+    //   this.windowWidth = event.innerWidth;
+    // });
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    const window = event.target as Window;
+
+    this.windowHeight = window.innerHeight;
+    this.windowWidth = window.innerWidth;
   }
 }

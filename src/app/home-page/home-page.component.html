@@ -1,4 +1,3 @@
-<app-main-nav></app-main-nav>
 
 <app-panel [windowHeight]="windowHeight" [windowWidth]="windowWidth" [backgroundImg]="'assets/images/hero-1.jpg'">
   <div class="container">
@@ -8,12 +7,12 @@
               <h1 class="display-4">
                 <app-brew-ticker></app-brew-ticker>
               </h1>
-              <p class="lead">Brewsoft specializes in providing quality software solutions and consulting services.</p>
-              <hr class="my-4">
+              <p class="lead">Brewsoft specializes in providing quality software solutions and consulting services</p>
+              <!-- <hr class="my-4">
               <p>To see some of the work we've done, check out the Brewsoft portfolio:</p>
               <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </p>
+              </p> -->
             </div>
 <!-- 
         <app-panel-header>
@@ -50,35 +49,35 @@
         </div>
       </div>
       <div class="col-sm-2 col-md-4">
-          <div class="skill-card">
-            <div class="skill-card__icon">
-              <mat-icon>cloud</mat-icon>
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <mat-icon>cloud</mat-icon>
+          </div>
+          <div class="skill-card__content">
+            <div class="skill-card__content-title">
+                Cloud Apps
             </div>
-            <div class="skill-card__content">
-              <div class="skill-card__content-title">
-                  Cloud Apps
-              </div>
-              <div class="skill-card__content-body">
-                  Brewsoft specializes in cloud application development, freeing clients of the tedious nature of self-hosting apps
-              </div>
+            <div class="skill-card__content-body">
+                Brewsoft specializes in cloud application development, freeing clients of the cumbersome nature of hosting apps in house
             </div>
           </div>
         </div>
-        <div class="col-sm-2 col-md-4">
-            <div class="skill-card">
-              <div class="skill-card__icon">
-                <mat-icon>dashboard</mat-icon>
-              </div>
-              <div class="skill-card__content">
-                <div class="skill-card__content-title">
-                    User Experience
-                </div>
-                <div class="skill-card__content-body">
-                    We believe that apps should be intuitive and effective for users, and excel at designing apps with that in mind
-                </div>
-              </div>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <mat-icon>dashboard</mat-icon>
+          </div>
+          <div class="skill-card__content">
+            <div class="skill-card__content-title">
+                User Experience
+            </div>
+            <div class="skill-card__content-body">
+                We believe that apps should be intuitive and effective for users, and excel at designing apps with that in mind
             </div>
           </div>
+        </div>
+      </div>
     </div>
   </div>
 </app-panel>
@@ -97,6 +96,91 @@
         <div class="language-tile">
             {{ language }}
         </div>
+      </div>
+    </div>
+  </div>
+</app-panel>
+
+<app-panel [windowHeight]="windowHeight" [windowWidth]="windowWidth" [backgroundImg]="'assets/images/hero-4.jpg'">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-panel-header>
+            We Brew <span class="accent-color">Results.</span>
+        </app-panel-header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-md-4">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <mat-icon>supervisor_account</mat-icon>
+          </div>
+          <div class="skill-card__content">
+            <div class="skill-card__content-title">
+                Project Management
+            </div>
+            <div class="skill-card__content-body">
+              We can help manage your projects throughout the entire project lifecycle, using PMI traditional and agile methodologies 
+            </div>
+          </div>
+        </div>\]“
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <mat-icon>repeat</mat-icon>
+          </div>
+          <div class="skill-card__content">
+            <div class="skill-card__content-title">
+              Process Optimization
+            </div>
+            <div class="skill-card__content-body">
+              Time is money, and we can analyze software and business processes to help make sure things run effectively 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 col-md-4">
+        <div class="skill-card">
+          <div class="skill-card__icon">
+            <mat-icon>description</mat-icon>
+          </div>
+          <div class="skill-card__content">
+            <div class="skill-card__content-title">
+                Professional Documents 
+            </div>
+            <div class="skill-card__content-body">
+              We want to make your content shine, from new marketing collateral to handouts for an important meeting and everything in between
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-panel>
+
+<app-panel [windowHeight]="windowHeight" [windowWidth]="windowWidth" [backgroundImg]="'assets/images/hero-5.jpg'">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <div class="jumbotron">
+              <h1 class="display-4">
+                We Brew <span class="accent-color">For You.</span>
+              </h1>
+              <p>Brewsoft specializes in solving problems, plain and simple.  If we can't do it in-house, we'll use our ever-growing network of professionals and consultants to get the right people to get the job done.</p>
+              <p>Get in touch to discuss your needs today:</p>
+              <p class="lead">
+                <a class="btn btn-primary btn-lg" href="mailto:contact@brewsoft.io" role="button">Contact@Brewsoft.io</a>
+              </p>
+              <p>
+                  <img class="responsive-image" src="assets/BrewsoftLogo_v2_withoutBackground_withText.png" style="max-width: 18em;" alt="">
+              </p>
+            </div>
+<!-- 
+        <app-panel-header>
+          <app-brew-ticker></app-brew-ticker>
+        </app-panel-header> -->
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { MatButtonModule, MatCardModule, MatIconModule, MatMenuModule } from '@angular/material';
 
@@ -24,7 +25,12 @@ import { PanelHeaderComponent } from './panel-header/panel-header.component';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    RouterModule.forRoot([
+      { path: '', component: HomePageComponent, },
+      // { path: 'home', component: HomeComponent },
+      { path: '**', redirectTo: '' }
+  ])
   ],
   providers: [],
   bootstrap: [AppComponent]
